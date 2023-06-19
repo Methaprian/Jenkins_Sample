@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-19T12:11:51 IST" name="Default suite" finished-at="2023-06-19T12:11:58 IST" duration-ms="6779">
+  <suite started-at="2023-06-19T15:27:36 IST" name="Default suite" finished-at="2023-06-19T15:28:29 IST" duration-ms="52349">
     <groups>
     </groups>
-    <test started-at="2023-06-19T12:11:51 IST" name="Default test" finished-at="2023-06-19T12:11:58 IST" duration-ms="6779">
+    <test started-at="2023-06-19T15:27:36 IST" name="Default test" finished-at="2023-06-19T15:28:29 IST" duration-ms="52349">
       <class name="github_Test.SampleTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:github_Test.SampleTest@35aea049]" started-at="2023-06-19T12:11:51 IST" name="openBrowser" finished-at="2023-06-19T12:11:53 IST" duration-ms="1492" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:github_Test.SampleTest@22ef9844]" started-at="2023-06-19T15:27:36 IST" name="openBrowser" finished-at="2023-06-19T15:27:38 IST" duration-ms="2086" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="sampleTest()[pri:0, instance:github_Test.SampleTest@35aea049]" started-at="2023-06-19T12:11:53 IST" name="sampleTest" finished-at="2023-06-19T12:11:53 IST" duration-ms="8" status="PASS">
+        <test-method signature="sampleTest()[pri:0, instance:github_Test.SampleTest@22ef9844]" started-at="2023-06-19T15:27:38 IST" name="sampleTest" finished-at="2023-06-19T15:28:23 IST" duration-ms="44811" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sampleTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:github_Test.SampleTest@35aea049]" started-at="2023-06-19T12:11:53 IST" name="closeBrowser" finished-at="2023-06-19T12:11:58 IST" duration-ms="5231" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:github_Test.SampleTest@22ef9844]" started-at="2023-06-19T15:28:23 IST" name="closeBrowser" finished-at="2023-06-19T15:28:29 IST" duration-ms="5397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

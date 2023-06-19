@@ -1,5 +1,7 @@
 package github_sample;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -14,6 +16,8 @@ public class BaseClass {
 	public void openBrowser() {
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 	
 	@AfterClass

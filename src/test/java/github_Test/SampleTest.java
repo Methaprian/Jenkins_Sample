@@ -18,7 +18,7 @@ public class SampleTest extends BaseClass{
 		
 		driver.get("https://www.mictests.com");
 		WebDriverWait wait = new WebDriverWait(driver, 60);
-		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.id("mic-launcher"))));
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("mic-launcher"))));
 		driver.findElement(By.id("mic-launcher")).click();
 		Robot rbt=new Robot();
 		rbt.keyPress(KeyEvent.VK_TAB);

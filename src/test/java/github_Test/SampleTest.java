@@ -17,7 +17,9 @@ public class SampleTest extends BaseClass{
 	public void sampleTest() throws AWTException {
 		
 		driver.get("https://www.mictests.com");
-		driver.findElement(By.cssSelector("button[id='mic-launcher']")).click();
+		WebDriverWait wait = new WebDriverWait(driver, 60);
+		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector("button[id='mic-launcher']"))))
+		.click();
 		Robot rbt=new Robot();
 		rbt.keyPress(KeyEvent.VK_TAB);
 		rbt.keyRelease(KeyEvent.VK_TAB);
@@ -26,7 +28,6 @@ public class SampleTest extends BaseClass{
 		rbt.keyPress(KeyEvent.VK_ENTER);
 		rbt.keyRelease(KeyEvent.VK_ENTER);
 		
-		WebDriverWait wait=new WebDriverWait(driver, 90);
 		wait.until(ExpectedConditions.visibilityOf
 				(driver.findElement(By.xpath("//li[contains(text(),'Testing was completed successfully and it seems your microphone works properly.')]"))));
 	}
